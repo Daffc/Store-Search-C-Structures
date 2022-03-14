@@ -82,7 +82,7 @@ int main(int argc, char *argv[]){
     #endif
 
     // SEARCHING
-    printf("SEARCHING VM:\n");
+    // printf("SEARCHING VM:\n");
     time = clock();
     for (i = 0; i < iterations; i++)
     {
@@ -98,7 +98,7 @@ int main(int argc, char *argv[]){
     time_taken = ((double) time)/CLOCKS_PER_SEC;
 
     printf("BSEARCH:\n");
-    printf("n_vm: %d    VM_NAME_SIZE: %d     iterations: %d\n", n_vm, VM_NAME_SIZE, iterations);
+    printf("\tn_vm: %d    VM_NAME_SIZE: %d     iterations: %d\n", n_vm, VM_NAME_SIZE, iterations);
     printf("\t%f sec (%f per iteration)\n", time_taken, time_taken/iterations);
 
     for (i = 0; i < n_vm; i++)
