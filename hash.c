@@ -163,7 +163,11 @@ void printHashTable(THash *h){
 
     for (i = 0; i < h->size; i++)
     {
-        printf("\t\t[%d] %s - %d\n", i, h->items[i]->name, h->items[i]->value);
+        if(h->items[i] !=NULL)
+            printf("\t\t[%d] %s - %d\n", i, h->items[i]->name, h->items[i]->value);
+        else
+            printf("\t\t[%d] (nil) - (nil)\n", i);
+
     }
 }
 
